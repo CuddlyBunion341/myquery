@@ -230,22 +230,14 @@ var $ = (function () {
 		xhr.send();
 	};
 	/**
-	 * Creates a Element
-	 * @param {string} tagName - tag name of the element
-	 * @param {*} attributes - attributes of the element
-	 * @param {*} children - children of the element
-	 * @returns myquery object
+	 * Creates a Element from a string
+	 * @param {string} html - html to parse
+	 * @returns element
 	 */
-	myquery.create = (tagName, attributes = {}, children = []) => {
-		const element = document.createElement(tagName);
-		attributes.forEach(key);
-		for (let key in attributes) {
-			element.setAttribute(key, attributes[key]);
-		}
-		for (let child of children) {
-			element.appendChild(child);
-		}
-		return $(element);
+	 myquery.create = (html) => {
+		const element = document.createElement("div");
+		element.innerHTML = html;
+		return element.firstChild;
 	};
 
 	return myquery;

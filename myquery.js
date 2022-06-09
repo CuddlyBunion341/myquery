@@ -115,9 +115,14 @@ var $ = (function () {
 				if (html) element.innerHTML = html;
 				return element.innerHTML;
 			},
-			/*
+			/**
+			 * Sets CSS properties of the element
+			 * using key / value pairs or using a style object
+			 * @param {string|Object} key 
+			 * @param {string} value 
+			 * @returns 
 			 */
-			css(key, value) {
+			 css(key, value) {
 				if (typeof key == "object") {
 					for (let key in style) {
 						element.style[key] = style[key];

@@ -1,6 +1,6 @@
 /**
  * author: Daniel Bengl
- * version: 1.2
+ * version: 1.3
  */
 var $ = (function () {
 	const myquery = (selector) => {
@@ -94,11 +94,15 @@ var $ = (function () {
 			},
 			/**
 			 * Appends the element to a parent
-			 * @param {HTMLElement} parent - parent element
+			 * @param {HTMLElement|myquery} parent - parent element
 			 * @returns myquery object
 			 */
-			appendTo(parent) {
-				parent.appendChild(element);
+			 appendTo(parent) {
+				if (parent instanceof HTMLElement) {
+					parent.appendChild(element);
+				} else {
+					parent.append(element);
+				}
 				return myquery;
 			},
 			/**

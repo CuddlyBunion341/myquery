@@ -14,14 +14,14 @@ $(document).ready(() => {
 const myDiv = $.create("div",{name: "myDiv"});
 ```
 
-
 ### Features
-Selector
+**Selector**
     - `$(element)`
     - `$("#id")`
     - `$("div")`
     - `$("div.class")`
-Action
+
+**Action**
     - `.on(eventName, callback)`
     - `.click(callback)`
     - `.data(key, value)`
@@ -39,7 +39,8 @@ Action
     - `.value(newValue)`
     - `.value()`
     - `.toggle()`
-Static Actions
+
+**Static Actions**
     - `.wait(milliseconds)`
     - `.post(url, data, callback)`
     - `.get(url, callback)`

@@ -17,10 +17,10 @@ const myDiv = $.create("div",{name: "myDiv"});
 ### Features
 **Selector**
 
-- `\$(element)`
-- `\$("#id")`
-- `\$("div")`
-- `\$("div.class")`
+- `$(element)`
+- `$("#id")`
+- `$("div")`
+- `$("div.class")`
 
 **Action**
 

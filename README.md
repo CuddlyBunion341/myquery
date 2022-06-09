@@ -16,32 +16,32 @@ const myDiv = $.create("div",{name: "myDiv"});
 
 ### Features
 **Selector**
-    - `$(element)`
-    - `$("#id")`
-    - `$("div")`
-    - `$("div.class")`
+    - \$(element)
+    - \$("#id")
+    - \$("div")
+    - \$("div.class")
 
 **Action**
-    - `.on(eventName, callback)`
-    - `.click(callback)`
-    - `.data(key, value)`
-    - `.add(...classNames)`
-    - `.remove(...classNames)`
-    - `.toggleClass(className)`
-    - `.append(element)`
-    - `.appendTo(parent)`
-    - `.text(text?)`
-    - `.html(html?)`
-    - `.css(key, value)`
-    - `.css(styleObject)`
-    - `.hide()`
-    - `.show()`
-    - `.value(newValue)`
-    - `.value()`
-    - `.toggle()`
+    - .on(eventName, callback)
+    - .click(callback)
+    - .data(key, value)
+    - .add(...classNames)
+    - .remove(...classNames)
+    - .toggleClass(className)
+    - .append(element)
+    - .appendTo(parent)
+    - .text(text?)
+    - .html(html?)
+    - .css(key, value)
+    - .css(styleObject)
+    - .hide()
+    - .show()
+    - .value(newValue)
+    - .value()
+    - .toggle()
 
 **Static Actions**
-    - `.wait(milliseconds)`
-    - `.post(url, data, callback)`
-    - `.get(url, callback)`
-    - `.create(tagName, attributes?, children?)`
+    - .wait(milliseconds)
+    - .post(url, data, callback)
+    - .get(url, callback)
+    - .create(tagName, attributes?, children?)

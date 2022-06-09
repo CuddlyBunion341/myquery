@@ -81,11 +81,15 @@ var $ = (function () {
 			},
 			/**
 			 * Appends a child to the element
-			 * @param {HTMLElement} element - element to append
+			 * @param {HTMLElement|String} element - element to append
 			 * @returns myquery object
 			 */
 			append(element) {
-				element.appendChild(element);
+				if (element instanceof HTMLElement) {
+					this.element.appendChild(element);
+				} else {
+					this.element.appendChild($.create(element));
+				}
 				return myquery;
 			},
 			/**

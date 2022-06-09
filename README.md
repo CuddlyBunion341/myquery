@@ -1,5 +1,5 @@
 ## MyQuery
-MyQuery is my own version of [JQuery](https://jquery.com).JQuery is a JavaScript Library that focuses on DOM manipulation, [AJAX](https://developer.mozilla.org/en-US/docs/Glossary/AJAX) and Event handling. The usage is very similar to jQuery:
+MyQuery is my own version of [JQuery](https://jquery.com). JQuery is a JavaScript Library that focuses on DOM manipulation, [AJAX](https://developer.mozilla.org/en-US/docs/Glossary/AJAX) and Event handling. The usage is very similar to jQuery:
 ```js
 // alerts Hello World after the page finished loading
 $(document).ready(() => {
